@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="br.com.fernando.arteaos4ventos.StartFragment"
+        android:label="Start Fragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_StartFragment_to_OptionsFragment"
+            app:destination="@id/OptionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OptionsFragment"
+        android:name="br.com.fernando.arteaos4ventos.OptionsFragment"
+        android:label="Options Fragment"
+        tools:layout="@layout/fragment_options">
+
+
+        <action
+            android:id="@+id/action_OptionsFragment_to_FormsFragment"
+            app:destination="@id/FormsFragment" />
+        <action
+            android:id="@+id/action_OptionsFragment_to_YoutubeFragment"
+            app:destination="@id/YoutubeFragment" />
+        <action
+            android:id="@+id/action_OptionsFragment_to_AskFragment"
+            app:destination="@id/AskFragment" />
+        <action
+            android:id="@+id/action_OptionsFragment_to_CountFragment"
+            app:destination="@id/CountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CountFragment"
+        android:name="br.com.fernando.arteaos4ventos.CountFragment"
+        android:label="CountFragment"
+        tools:layout="@layout/fragment_count">
+        <action
+            android:id="@+id/action_CountFragment_to_Count2Fragment"
+            app:destination="@id/Count2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Count2Fragment"
+        android:name="br.com.fernando.arteaos4ventos.Count2Fragment"
+        android:label="Count2Fragment"
+        tools:layout="@layout/fragment_count_2">
+        <action
+            android:id="@+id/action_Count2Fragment_to_OptionsFragment"
+            app:destination="@id/OptionsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AskFragment"
+        android:name="br.com.fernando.arteaos4ventos.AskFragment"
+        android:label="AskFragment"
+        tools:layout="@layout/fragment_ask">
+
+        <action
+            android:id="@+id/action_AskFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/YoutubeFragment"
+        android:name="br.com.fernando.arteaos4ventos.YoutubeFragment"
+        android:label="Youtube Fragment"
+        tools:layout="@layout/fragment_youtube">
+
+        <action
+            android:id="@+id/action_YoutubeFragment_to_OptionsFragment"
+            app:destination="@id/OptionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FormsFragment"
+        android:name="br.com.fernando.arteaos4ventos.OptionsFragment"
+        android:label="Options Fragment"
+        tools:layout="@layout/fragment_forms">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="br.com.fernando.arteaos4ventos.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_HelpFragOne"
+            app:destination="@id/HelpFragOne"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/First2Fragment"
+        android:name="br.com.fernando.arteaos4ventos.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first2">
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="br.com.fernando.arteaos4ventos.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_HelpFragTwo"
+            app:destination="@id/HelpFragTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="br.com.fernando.arteaos4ventos.ThirdFragment"
+        android:label="Third Fragment"
+        tools:layout="@layout/fragment_third">
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_ForthFragment"
+            app:destination="@id/ForthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ForthFragment"
+        android:name="br.com.fernando.arteaos4ventos.ForthFragment"
+        android:label="Forth Fragment"
+        tools:layout="@layout/fragmet_forth">
+        <action
+            android:id="@+id/action_ForthFragment_to_FifthFragment"
+            app:destination="@id/FifthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="br.com.fernando.arteaos4ventos.FifthFragment"
+        android:label="Fifth Fragment"
+        tools:layout="@layout/fragment_fifth">
+        <action
+            android:id="@+id/action_FifthFragment_to_FifthFragment2"
+            app:destination="@id/FifthFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FifthFragment2"
+        android:name="br.com.fernando.arteaos4ventos.FifthFragment2"
+        android:label="Fifth Fragment2"
+        tools:layout="@layout/fragment_fifth_2">
+        <action
+            android:id="@+id/action_FifthFragment2_to_SixthFragment"
+            app:destination="@id/SixthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SixthFragment"
+        android:name="br.com.fernando.arteaos4ventos.SixthFragment"
+        android:label="Sixth Fragment"
+        tools:layout="@layout/fragment_sixth">
+        <action
+            android:id="@+id/action_SixthFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SixthFragment_to_OptionsFragment"
+            app:destination="@id/OptionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/HelpFragOne"
+        android:name="br.com.fernando.arteaos4ventos.HelpFragOne"
+        android:label="Help One"
+        tools:layout="@layout/help_fragone">
+
+        <action
+            android:id="@+id/action_HelpFragOne_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/HelpFragTwo"
+        android:name="br.com.fernando.arteaos4ventos.HelpFragTwo"
+        android:label="Help Two"
+        tools:layout="@layout/help_fragtwo">
+
+        <action
+            android:id="@+id/action_HelpFragTwo_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+</navigation>

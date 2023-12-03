@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1034459752661",
+    "project_id": "project-8364241852481260108",
+    "storage_bucket": "project-8364241852481260108.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034459752661:android:abb800cd4e3e70c0af9a5c",
+        "android_client_info": {
+          "package_name": "br.com.fernando.arteaos4ventos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034459752661-8kf23j5uvcm8qns36o24pcsfs2lhmpir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fernando.arteaos4ventos",
+            "certificate_hash": "38163b72ebcb2bb1a57d7b69eaf0a731a260202c"
+          }
+        },
+        {
+          "client_id": "1034459752661-34s6ud6kuu8eoq42pvll4f87ntfegd9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClnVqi5rVJnxL06tLgu016TUTWu4_JbvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034459752661-34s6ud6kuu8eoq42pvll4f87ntfegd9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

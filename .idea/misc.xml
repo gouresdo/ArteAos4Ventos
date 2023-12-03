@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_main.xml" value="0.18948322756119673" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_Ask.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_ask.xml" value="0.25" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_count.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_count_2.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_fifth.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_fifth_2.xml" value="0.2" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first2.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_forms.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_options.xml" value="0.18" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_second.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_sixth.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_start.xml" value="0.25" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_third.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_youtube.xml" value="0.25" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragmet_forth.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/help_fragfour.xml" value="0.18948322756119673" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/help_fragthree.xml" value="0.17271078875793291" />
+        <entry key="..\:/Users/Micro/AndroidStudioProjects/MyApplication/app/src/main/res/layout/help_fragtwo.xml" value="0.2694746376811594" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

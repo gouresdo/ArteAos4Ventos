@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StartFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_app"
+    tools:context=".StartFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layoutStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ARTE AOS 4 VENTOS NA PALMA DA SUA MÃO"
+            android:textColor="@color/gray"
+            android:textSize="28dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="401dp"
+            android:src="@drawable/foto_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewIntro"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:gravity="center"
+            android:text="Crochetando com a Tia Graça!"
+            android:textColor="@color/gray"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textViewNext"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="#E0D79D"
+            android:gravity="center"
+            android:text="Toque para continuar"
+            android:textColor="@color/gray"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
