@@ -41,8 +41,21 @@
         android:label="CountFragment"
         tools:layout="@layout/fragment_count">
         <action
-            android:id="@+id/action_CountFragment_to_Count2Fragment"
+            android:id="@+id/action_CountFragment_to_Count12Fragment"
+            app:destination="@id/Count12Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Count12Fragment"
+        android:name="br.com.fernando.arteaos4ventos.Count12Fragment"
+        android:label="Count12Fragment"
+        tools:layout="@layout/fragment_count_12">
+        <action
+            android:id="@+id/action_Count12Fragment_to_Count2Fragment"
             app:destination="@id/Count2Fragment" />
+        <action
+            android:id="@+id/action_Count12Fragment_to_CountFragment"
+            app:destination="@id/CountFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/Count2Fragment"
@@ -83,25 +96,6 @@
 
     </fragment>
 
-    <fragment
-        android:id="@+id/FirstFragment"
-        android:name="br.com.fernando.arteaos4ventos.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_HelpFragOne"
-            app:destination="@id/HelpFragOne"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/First2Fragment"
-        android:name="br.com.fernando.arteaos4ventos.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first2">
-    </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="br.com.fernando.arteaos4ventos.SecondFragment"
@@ -167,18 +161,6 @@
             app:destination="@id/OptionsFragment" />
     </fragment>
 
-    <fragment
-        android:id="@+id/HelpFragOne"
-        android:name="br.com.fernando.arteaos4ventos.HelpFragOne"
-        android:label="Help One"
-        tools:layout="@layout/help_fragone">
-
-        <action
-            android:id="@+id/action_HelpFragOne_to_FirstFragment"
-            app:destination="@id/FirstFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
     <fragment
         android:id="@+id/HelpFragTwo"
         android:name="br.com.fernando.arteaos4ventos.HelpFragTwo"

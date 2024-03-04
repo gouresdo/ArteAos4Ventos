@@ -9,12 +9,11 @@
     tools:context=".StartFragment">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="391dp"
+        android:layout_height="721dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -41,92 +40,137 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Iniciante"
                 android:textColor="#FFFBD5"
                 android:textSize="14dp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button41"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
-                android:text="Fácil"
+                android:text="Fácil 1"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button42"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#D85FC8"
+                android:text="Fácil 2"
+                android:textColor="#FFFBD5"
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Intermediario"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Natal"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Fraldas"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Sousplat"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Toalhas de Banho"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button10"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Zoológico da tia Graça"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button11"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Carreira Única"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <Button
                 android:id="@+id/button12"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:backgroundTint="#D85FC8"
                 android:text="Bicos com Duas Cores"
                 android:textColor="#FFFBD5"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#D85FC8"
+                android:text="Bicos com Ponto Abacaxi"
+                android:textColor="#FFFBD5"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#D85FC8"
+                android:text="Bicos com Ponto Aranha"
+                android:textColor="#FFFBD5"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#D85FC8"
+                android:text="Almofadas"
+                android:textColor="#FFFBD5"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#D85FC8"
+                android:text="Vestuario e Acessórios"
+                android:textColor="#FFFBD5"
+                android:textSize="14dp" />
         </LinearLayout>
     </ScrollView>
 

@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     static String data4;
     static String data5;
     static String dataPlus;
+    static String dataPlusEx;
 
 
     @Override
@@ -129,6 +130,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d("print", "data: "+dataPlus);
     }
 
+    public static void storeDataPlusEx(String data){
+        dataPlusEx = data;
+    }
+
+    public static void printDataPlusEx(){
+        Log.d("print", "data: "+dataPlusEx);
+    }
+
     public static String getData1(){
         return data1;
     }
@@ -146,6 +155,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public static String getDataPlus(){
         return dataPlus;
+    }
+    public static String getDataPlusEx(){
+        return dataPlusEx;
     }
 
 

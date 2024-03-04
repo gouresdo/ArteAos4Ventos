@@ -15,12 +15,11 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import br.com.fernando.arteaos4ventos.R;
-import br.com.fernando.arteaos4ventos.databinding.FragmentCount2Binding;
+import br.com.fernando.arteaos4ventos.databinding.FragmentCount12Binding;
 
-public class Count2Fragment extends Fragment {
+public class Count12Fragment extends Fragment {
 
-    private FragmentCount2Binding binding;
+    private FragmentCount12Binding binding;
 
 
 
@@ -30,32 +29,26 @@ public class Count2Fragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentCount2Binding.inflate(inflater, container, false);
+        binding = FragmentCount12Binding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        String base = "";
+        String base = MainActivity.getDataPlusEx();
         String plus = "";
+        Log.d("debug 2", MainActivity.getDataPlusEx());
         super.onViewCreated(view, savedInstanceState);
-        if (MainActivity.getDataPlus().charAt(0) != '1'){
-            base = String.valueOf(MainActivity.getDataPlus().charAt(0));
-            plus = String.valueOf(MainActivity.getDataPlus().charAt(4));
-            Log.d("printa", "data: "+base);
-            Log.d("printb", "data: "+plus);
+        /*if (MainActivity.getDataPlusEx().charAt(0) != '1'){
+            base = String.valueOf(MainActivity.getDataPlusEx().charAt(0));
         }else{
-            base = base.concat(String.valueOf(MainActivity.getDataPlus().charAt(0))).concat(String.valueOf(MainActivity.getDataPlus().charAt(1)));
-            if(MainActivity.getDataPlus().charAt(5) != '1') {
-                plus = String.valueOf(MainActivity.getDataPlus().charAt(5));
-            }else{
-                plus = String.valueOf(MainActivity.getDataPlus().charAt(5)).concat(String.valueOf(MainActivity.getDataPlus().charAt(6)));
-            }
-            Log.d("printa", "data: "+base);
-            Log.d("printb", "data: "+plus);
-        }
+            base = String.valueOf(MainActivity.getDataPlusEx().charAt(0) + MainActivity.getDataPlusEx().charAt(1));
+        }*/
+        String make = "0";
 
+        fillPluses(base, 0, binding.layoutNum1);
+        fillPluses(base, 7, binding.layoutNum2);
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getContext().getDisplay().getMetrics(displayMetrics);
@@ -69,14 +62,14 @@ public class Count2Fragment extends Fragment {
         paramsS.height = (height/2) - 100;
 
 
-        int value = Integer.valueOf(base) + Integer.valueOf(plus);
+        /*int value = Integer.valueOf(base) + Integer.valueOf(plus);
         Log.d("print", "data: "+value);
         do{
             value += Integer.valueOf(base);
         }while (value<30);
 
         for(int i=0;i<14;i++){
-            if(value<75 || i<5){
+            if(value<75){
                 value += Integer.valueOf(base);
                 if(i<8){
                     TextView v = new TextView(getContext());
@@ -94,7 +87,7 @@ public class Count2Fragment extends Fragment {
                     binding.layoutNum2.addView(v);
                 }
             }
-        }
+        }*/
 
 
 
@@ -103,17 +96,41 @@ public class Count2Fragment extends Fragment {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                NavHostFragment.findNavController(Count2Fragment.this)
-                        .navigate(R.id.action_Count2Fragment_to_OptionsFragment);
+                NavHostFragment.findNavController(Count12Fragment.this)
+                        .navigate(R.id.action_Count12Fragment_to_CountFragment);
 
             }
         });
     }
 
 
+    void fillPluses (String base, int initial, LinearLayout lay){
+        Log.d("valor da base", base);
+        int x = Integer.parseInt(base);
+        Log.d("valor da base", String.valueOf(x));
+        for (int i=initial;i<=initial + 6;i++) {
+            if(i<x) {
+                TextView v = new TextView(getContext());
+                v.setText(base + " + " + String.valueOf(i));
 
+                v.setTextSize(30);
+                v.setGravity(17);
+                v.setBackground(getResources().getDrawable(R.drawable.testemargin));
+                v.setTextColor(getResources().getColor(R.color.gray));
+                lay.addView(v);
+                v.setOnClickListener(view1 -> {
+                    String send = "";
+                    for (int y = 0; y < v.length(); y++) {
+                        send = send.concat(String.valueOf(v.getText().charAt(y)));
+                    }
+                    MainActivity.storeDataPlus(send);
+                    NavHostFragment.findNavController(Count12Fragment.this)
+                            .navigate(R.id.action_Count12Fragment_to_Count2Fragment);
+                });
+            }
+        }
+    }
 
-    
     int findPicture(int pictureNeeded){
         if (pictureNeeded == 1) {
             return R.drawable.bloco1;

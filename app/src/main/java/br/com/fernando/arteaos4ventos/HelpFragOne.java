@@ -32,14 +32,7 @@ public class HelpFragOne extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.floatingActionButtonH1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                NavHostFragment.findNavController(HelpFragOne.this)
-                        .navigate(R.id.action_HelpFragOne_to_FirstFragment);
 
-            }
-        });
     }
 
 

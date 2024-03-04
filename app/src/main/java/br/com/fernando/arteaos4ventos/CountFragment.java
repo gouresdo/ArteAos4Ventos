@@ -3,6 +3,7 @@ package br.com.fernando.arteaos4ventos;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,84 +60,103 @@ public class CountFragment extends Fragment {
 
 
         TextView result1;
+        TextView result2;
         result1 = (TextView) view.findViewById(R.id.textview_5_1);
+        result2 = (TextView) view.findViewById(R.id.textview_5_2);
         result1.setText("3");
         result1.setTextSize(30);
-        result1.setBackground(getResources().getDrawable(R.drawable.purpmargin));
+        result1.setBackground(getResources().getDrawable(R.drawable.pinkdmargin));
         result1.setTextColor(getResources().getColor(R.color.black));
-        TextView[] Txtviews = {result1, new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext()),new TextView(getContext())};
+        result2.setText("9");
+        result2.setTextSize(30);
+        result2.setBackground(getResources().getDrawable(R.drawable.pinkdmargin));
+        result2.setTextColor(getResources().getColor(R.color.black));
+
+
+        result1.setOnClickListener(view1 -> {
+            String senda = "";
+            for (int y = 0; y < result1.getText().length(); y++) {
+                senda = senda.concat(String.valueOf(result1.getText().charAt(y)));
+            }
+            MainActivity.storeDataPlusEx(senda);
+            NavHostFragment.findNavController(CountFragment.this)
+                    .navigate(R.id.action_CountFragment_to_Count12Fragment);
+        });
+        result2.setOnClickListener(view1 -> {
+            String senda = "";
+            for (int y = 0; y < result2.getText().length(); y++) {
+                senda = senda.concat(String.valueOf(result2.getText().charAt(y)));
+            }
+            MainActivity.storeDataPlusEx(senda);
+            NavHostFragment.findNavController(CountFragment.this)
+                    .navigate(R.id.action_CountFragment_to_Count12Fragment);
+        });
+
+        TextView[] Txtviews = {result1, new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext())};
+        TextView[] Txtviews2 = {result2, new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext()), new TextView(getContext())};
         for (int i=1;i<Txtviews.length;i++) {
-
             Txtviews[i].setText(String.valueOf(i+3));
-
             Txtviews[i].setTextSize(30);
             Txtviews[i].setGravity(17);
             Txtviews[i].setClickable(true);
-            if(i==1){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.redmargin));
-            }
-            if(i==2){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.radmargin));
-            }
-            if(i==3){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.ylwmargin));
-            }
-            if(i==4){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.greenmargin));
-            }
-            if(i==5){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.l8luemargin));
-            }
-            if(i==6){
-                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.d8luemargin));
+            if(i%2==1) {
+                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.pinklmargin));
+            }else{
+                Txtviews[i].setBackground(getResources().getDrawable(R.drawable.pinkdmargin));
             }
             Txtviews[i].setTextColor(getResources().getColor(R.color.black));
-            //Txtviews[i].setBackgroundColor(getResources().getColor(R.color.yellow_x));
+
             binding.layoutNum.addView(Txtviews[i]);
 
             int finalI = i;
             Txtviews[i].setOnClickListener(view1 -> {
-
-                binding.layoutMais.removeAllViews();
-                binding.layoutMais.removeAllViews();
-
-                String make = String.valueOf(Txtviews[finalI].getText().charAt(0));
-                fillPluses(make, binding.layoutMais);
-            });
-        }
-
-        binding.layoutTxt.setGravity(17);
-        binding.textview51.setOnClickListener(view1 -> {
-            binding.layoutMais.removeAllViews();
-            binding.layoutMais.removeAllViews();
-            fillPluses("3", binding.layoutMais);
-        });
-
-
-    }
-
-    void fillPluses (String base,  LinearLayout lay){
-        int x = Integer.parseInt(base);
-
-        for (int i=0;i<=x-1;i++) {
-            TextView v = new TextView(getContext());
-            v.setText(base + " + " + String.valueOf(i));
-            v.setTextSize(30);
-            v.setGravity(17);
-            v.setBackground(getResources().getDrawable(R.drawable.testemargin));
-            v.setTextColor(getResources().getColor(R.color.gray));
-            lay.addView(v);
-            v.setOnClickListener(view1 -> {
                 String send = "";
-                for (int y=0;y<v.length();y++){
-                    send = send.concat(String.valueOf(v.getText().charAt(y)));
+                TextView v = new TextView(getContext());
+                Log.d("debug 1 = ", v.getText().toString());
+
+                for (int y = 0; y < Txtviews[finalI].getText().length(); y++) {
+                    send = send.concat(String.valueOf(Txtviews[finalI].getText().charAt(y)));
                 }
-                MainActivity.storeDataPlus(send);
+                MainActivity.storeDataPlusEx(send);
                 NavHostFragment.findNavController(CountFragment.this)
-                        .navigate(R.id.action_CountFragment_to_Count2Fragment);
+                        .navigate(R.id.action_CountFragment_to_Count12Fragment);
+
             });
         }
+        for (int i=1;i<Txtviews2.length;i++) {
+            Txtviews2[i].setText(String.valueOf(i+9));
+            Txtviews2[i].setTextSize(30);
+            Txtviews2[i].setGravity(17);
+            Txtviews2[i].setClickable(true);
+
+            if(i%2==1) {
+                Txtviews2[i].setBackground(getResources().getDrawable(R.drawable.pinklmargin));
+            }else{
+                Txtviews2[i].setBackground(getResources().getDrawable(R.drawable.pinkdmargin));
+            }
+
+
+            Txtviews2[i].setTextColor(getResources().getColor(R.color.black));
+
+            binding.layoutMais.addView(Txtviews2[i]);
+
+            int finalI = i;
+            Txtviews2[i].setOnClickListener(view1 -> {
+
+                String send = "";
+                for (int y = 0; y < Txtviews2[finalI].getText().length(); y++) {
+                    send = send.concat(String.valueOf(Txtviews2[finalI].getText().charAt(y)));
+                }
+                MainActivity.storeDataPlusEx(send);
+                NavHostFragment.findNavController(CountFragment.this)
+                        .navigate(R.id.action_CountFragment_to_Count12Fragment);
+
+
+            });
+        }
+
     }
+
 
     int findPicture(int pictureNeeded){
         if (pictureNeeded == 1) {

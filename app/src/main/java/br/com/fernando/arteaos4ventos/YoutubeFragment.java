@@ -41,10 +41,16 @@ public class YoutubeFragment extends Fragment {
                 openWebPage("https://www.youtube.com/watch?v=qrJYcSCp0AE&list=PLL3IkvkW-g__FJfcdYeJ4lvGiw6_gv5dV");
             }
         });
-        binding.button4.setOnClickListener(new View.OnClickListener(){
+        binding.button41.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 openWebPage("https://www.youtube.com/watch?v=efxrybvoWrs&list=PLL3IkvkW-g__0dFbBNBWhqBcKGwFPKZeG");
+            }
+        });
+        binding.button42.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                openWebPage("https://youtube.com/playlist?list=PLL3IkvkW-g__KH51jnHMp0jxpSihPWeOI&si=o0D06PVyzm0-J84P");
             }
         });
         binding.button5.setOnClickListener(new View.OnClickListener(){
@@ -95,8 +101,36 @@ public class YoutubeFragment extends Fragment {
                 openWebPage("https://youtube.com/playlist?list=PLL3IkvkW-g__zZF-5ha71nNumSqrGCWkA");
             }
         });
+        binding.button13.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                openWebPage("https://youtube.com/playlist?list=PLL3IkvkW-g_-SnQ8MevYxeb6X0ftPvtL2&si=dK68ZdbN1zkSILwg");
+            }
+        });
 
-       binding.buttonBack.setOnClickListener(new View.OnClickListener(){
+        binding.button14.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                openWebPage("https://www.youtube.com/playlist?list=PLL3IkvkW-g_-4q8e3KMagjdMgR5cUxsii");
+            }
+        });
+
+        binding.button15.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                openWebPage("https://youtube.com/playlist?list=PLL3IkvkW-g__ZBL80sfN5AmeNFW2egTqB&si=7rgHx60uwO7v7RPE");
+            }
+        });
+        binding.button16.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                openWebPage("https://youtube.com/playlist?list=PLL3IkvkW-g_9tFEoS8lYU4P84hIrgDlLD&si=JXogG04fjQx-l2wK");
+            }
+        });
+
+
+
+        binding.buttonBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 NavHostFragment.findNavController(YoutubeFragment.this)
